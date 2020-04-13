@@ -1,0 +1,67 @@
+/*LOGIN*/
+
+#container_login {
+    width: 100%;
+    padding-top: 15%;
+    background: transparent;
+}
+
+#login {
+    width: 18%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(143, 19, 56, 0.705);
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+#login h1 {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+#login h2 {
+    color: aliceblue;
+}
+
+#login input {
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+#login input[placeholder] {
+    text-align: center;
+}
+
+#login img {
+    width: 70px;
+    height: auto;
+}
+
+.error-span {
+    width: 80%;
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+#error-input-username {
+    display: none;
+}
+
+#error-input-password {
+    display: none;
+}

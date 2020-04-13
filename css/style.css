@@ -200,16 +200,3 @@ footer:hover a:hover {
     width: 49px;
     height: 49px;
 }
-
-#login {
-    width: 200px;
-    height: 100px;
-    background-color: rgba(5, 20, 85, 0.705);
-    border-radius: 8px;
-}
-
-#login input {
-    width: 90%;
-    margin-left: 5px;
-    margin-right: 5px;
-}
