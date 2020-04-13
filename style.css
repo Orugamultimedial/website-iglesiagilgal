@@ -1,0 +1,215 @@
+/*custom fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Courgette|Oswald|Pacifico|Satisfy|Slabo+27px&display=swap');
+
+/*Generals Styles*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'oswald';
+    font-size: 20px;
+    background: url('./assets/img/background.png');
+    /*background-attachment: fixed;*/
+    background: -webkit-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -webkit-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -webkit-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -webkit-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
+    background: -moz-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -moz-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -moz-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -moz-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
+    background: -o-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -o-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -o-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -o-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
+    background: -ms-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -ms-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -ms-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -ms-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
+    background: radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
+    background-blend-mode: luminosity;
+}
+
+
+/*Limpia el flotado entre los elementos*/
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+
+/* Navbar*/
+
+header {
+    display: inline-flex;
+    width: 100%;
+    height: 55px;
+    background-color: #1a465c;
+    position: fixed;
+    text-transform: uppercase;
+}
+
+#title-bar {
+    display: block;
+    padding-top: 1%;
+    margin-left: 5%;
+    height: inherit;
+    font-family: 'merriweather', serif;
+    text-decoration: none;
+    text-transform: none;
+    color: whitesmoke;
+    transition: all 300ms;
+    font-size: 20px;
+}
+
+header ul {
+    display: block;
+    width: auto;
+    height: inherit;
+    margin: auto;
+    margin-right: 5%;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+header ul li a {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 300ms;
+}
+
+header ul li a:hover {
+    background-color: rgba(10, 107, 163, 0.356);
+    transform: scale(0.9, 0.9);
+}
+
+.actived {
+    background-color: rgba(10, 107, 163, 0.356);
+    transform: scale(0.9, 0.9);
+}
+
+#logo a:hover {
+    background-color: rgba(10, 107, 163, 0);
+}
+
+#logo {
+    display: none;
+    font-family: 'Courgette';
+    text-transform: lowercase;
+    font-size: 40px;
+}
+
+
+/*container*/
+
+#content {
+    width: 90%;
+    height: auto;
+    min-height: 1000px;
+    margin: auto;
+    padding-top: 90px;
+    box-shadow: 0px 0px 25px rgb(97, 96, 96);
+    background: transparent;
+    overflow: auto;
+}
+
+
+/*footer*/
+
+footer {
+    min-height: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 1%;
+    opacity: 40%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer:hover a:hover {
+    color: #1a465c;
+}
+
+
+/*------------------RESPONSIVE--------------------------*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /*HEADER*/
+    #title-bar {
+        padding-top: 5%;
+        font-size: 15px;
+    }
+    header ul {
+        margin-right: 5%;
+    }
+    #nav-create-project {
+        display: none;
+    }
+    header ul li a {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+}
+
+
+/* Social Buttones */
+
+.social {
+    width: 40px;
+    position: fixed;
+    top: 250px;
+    right: 8%;
+}
+
+#whatsapp-logo {
+    width: 48px;
+    height: 48px;
+}
+
+#whatsapp-logo:hover {
+    width: 52px;
+    height: 52px;
+}
+
+#linkedin-logo {
+    width: 45px;
+    height: 45px;
+}
+
+#linkedin-logo:hover {
+    width: 49px;
+    height: 49px;
+}
+
+#gmail-logo {
+    width: 45px;
+    height: 45px;
+}
+
+#gmail-logo:hover {
+    width: 49px;
+    height: 49px;
+}
+
+#login {
+    width: 200px;
+    height: 100px;
+    background-color: rgba(5, 20, 85, 0.705);
+    border-radius: 8px;
+}
+
+#login input {
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
