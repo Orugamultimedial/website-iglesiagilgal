@@ -1,3 +1,6 @@
+<?php require_once('conection_db.php');?>
+
+
 <header style="margin-top:0px;">
     
         <h1 id="title-bar">Iglesia Gilgal</h1>
