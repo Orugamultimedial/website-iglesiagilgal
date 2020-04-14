@@ -10,7 +10,9 @@
 </head>
 <body>
 <?php
-require('header.php');
+require('./includes/header.php');
+require('./includes/social_buttons.php');
+
 ?>
 
 <div id='container_login'>
