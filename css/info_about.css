@@ -1,0 +1,51 @@
+/*info_about*/
+
+#container-about {
+    width: 65%;
+    margin-top: -722px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container_about_info {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    margin-top: o;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1%;
+    /*background: url(../img/background.png);*/
+    padding-bottom: 2%;
+    color: #ccc;
+}
+
+#info_about_text {
+    padding: 1%;
+    width: 95%;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 25px;
+}
+
+#info_about_text h2 {
+    margin-bottom: 20px;
+}
+
+#info_about_img {
+    float: right;
+    width: 235px;
+    height: 235px;
+    overflow: hidden;
+    padding-left: 1%;
+    border-radius: 8px;
+}
+
+#info_about_img img {
+    width: 235px;
+    height: 235px;
+}

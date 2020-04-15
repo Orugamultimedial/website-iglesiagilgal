@@ -13,8 +13,7 @@
 body {
     font-family: 'oswald';
     font-size: 20px;
-    background: url('./assets/img/background.png');
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background: -webkit-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -webkit-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -webkit-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -webkit-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
     background: -moz-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -moz-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -moz-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -moz-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
     background: -o-radial-gradient(circle at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), -o-radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), -o-radial-gradient(circle at 35% 40%, rgba(1, 255, 224, .7), transparent), -o-radial-gradient(circle at 65% 65%, rgba(41, 172, 237, .9), transparent);
@@ -46,7 +45,7 @@ header {
 #title-bar {
     display: block;
     padding-top: 1%;
-    margin-left: 5%;
+    margin-left: 0.5%;
     height: inherit;
     font-family: 'merriweather', serif;
     text-decoration: none;
@@ -145,7 +144,7 @@ footer:hover a:hover {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /*HEADER*/
     #title-bar {
-        padding-top: 5%;
+        margin-left: 0.5%;
         font-size: 15px;
     }
     header ul {

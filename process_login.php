@@ -24,7 +24,7 @@ $password = $_POST['password']
 </head>
 <body>
 <?php
-require('header.php');
+require('./includes/header.php');
 
 if($error == false){?>
     <div id='container_login'>

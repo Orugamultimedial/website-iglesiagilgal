@@ -2,11 +2,11 @@
 
 #schedule {
     display: inline-flex;
-    width: 45%;
+    width: 55%;
     height: 500px;
     margin-top: 100px;
     margin-left: auto;
-    margin-right: 30%;
+    margin-right: 25%;
     background: radial-gradient(ellipse at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(ellipse at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(237, 48, 101, .7), transparent), radial-gradient(circle at 65% 65%, rgba(169, 99, 198, .7), transparent);
     border-radius: 8px;
     border: 1px solid #ccc;
