@@ -1,34 +1,32 @@
 /*LOGIN*/
 
-#container_login {
-    width: 100%;
-    height: 100%;
-    padding-top: 15%;
-    background: transparent;
-}
-
-#login {
-    width: 18%;
-    height: 200px;
-    margin-left: auto;
+#create_user {
+    display: none;
+    width: 15%;
+    min-height: 200px;
+    margin-left: 15%;
     margin-right: auto;
     background-color: rgba(143, 19, 56, 0.705);
     border-radius: 10px;
     padding: 2%;
     text-align: center;
+    box-sizing: content-box;
+    position: fixed;
+    margin-top: 4.2%;
 }
 
-#login h1 {
+#create_user h1 {
     text-align: center;
     color: aliceblue;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
-#login h4 {
+#create_user h4 {
     color: aliceblue;
 }
 
-#login input {
+#create_user input {
     width: 90%;
     height: 20px;
     margin-left: 5px;
@@ -37,16 +35,16 @@
     margin-bottom: 5px;
 }
 
-#login input[placeholder] {
+#create_user input[placeholder] {
     text-align: center;
 }
 
-#login input[type="submit"]:hover {
+#create_user input[type="submit"]:hover {
     background-color: rgba(143, 19, 56, 0.295);
     color: aliceblue;
 }
 
-#login img {
+#create_user img {
     width: 70px;
     height: auto;
 }
@@ -65,19 +63,22 @@
     padding-bottom: 0.5%;
 }
 
-#error-input-username {
+#error-input-user_create_user {
     display: none;
 }
 
-#error-input-password {
+#error-input-pass_create_user {
     display: none;
 }
 
-#logo_login {
-    width: 80px;
-    height: 80px;
-    margin-left: 47.2%;
-    margin-right: auto;
-    margin-top: -50px;
-    position: fixed;
+#error-input-name_create_user {
+    display: none;
+}
+
+#error-input-surname_create_user {
+    display: none;
+}
+
+#error-input-mail_create_user {
+    display: none;
 }

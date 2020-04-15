@@ -1,0 +1,44 @@
+/*LATERAL MENU*/
+
+#lateral_menu {
+    width: 10%;
+    background-color: rgba(70, 122, 218, 0.562);
+    box-sizing: content-box;
+    border-radius: 0px 0px 8px 8px;
+    position: fixed;
+    margin-left: 2%;
+    margin-top: 4%;
+    padding-top: 1%;
+    padding: 0.5%;
+}
+
+#lateral_menu ul {
+    list-style: none;
+}
+
+#lateral_menu img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30%;
+    margin-right: auto;
+    border-radius: 100%;
+}
+
+#lateral_menu h3 {
+    text-align: center;
+    color: aliceblue;
+}
+
+#lateral_menu li {
+    background-color: rgba(31, 16, 117, 0.76);
+    color: aliceblue;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 3%;
+    font-size: 15px;
+    text-align: center;
+}
+
+#lateral_menu li:hover {
+    transform: scale(0.9);
+}

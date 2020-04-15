@@ -1,15 +1,16 @@
+<link rel="stylesheet" href="./css/login.css">
 <?php
 $error = true;
 
-if(isset($_POST['username']) && isset($_POST['password'])){
+if(isset($_POST['user']) && isset($_POST['pass'])){
 $error = false;
 }else{
     $error = true;
 }
 
+$user = $_POST['user'];
+$pass = $_POST['pass'];
 
-$username = $_POST['username'];
-$password = $_POST['password']
 ?>
 
 <!DOCTYPE html>
@@ -23,24 +24,27 @@ $password = $_POST['password']
     <script src="main.js"></script>
 </head>
 <body>
+
 <?php
 require('./includes/header.php');
 
-if($error == false){?>
-    <div id='container_login'>
-        <div id='login'>
-            <img src="./img/check_ok.png" alt="check ok"><h1>identificado</h1>
-            <br>
-            <h2>Hola <?php $username ?>, Bienvenido!</h2>
-        </div> 
-    </div> <<?php 
-    header("location:index.php?login=ok",3);
-}else{?>
+
+if($error == false){
+    echo "<div id='container_login'>";
+    echo "  <div id='login'>";
+    echo "    <img src='./img/check_ok.png' alt='check ok'><h1>identificado</h1>";
+    echo "    <br>";
+    echo "    <h4>Hola $user, Bienvenido!</h4>";
+    echo "  </div>"; 
+    echo "</div>"; 
+    header( "Refresh:2; url=./administration.php?login=ok&user=$user", true, 303);
+}else{
+echo `
    <div id='container_login'>
         <div id='login'>
         <img src="./img/check_fail.png" alt="check ok"><h1>Hay un error</h1>
         </div> 
-    </div><?php
+    </div>`;
 };
 ?>
 
