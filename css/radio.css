@@ -1,0 +1,25 @@
+/*multimedia*/
+
+#container_multimedia {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -700px;
+}
+
+#container_multimedia h1,
+#container_multimedia h2 {
+    text-align: center;
+    color: aliceblue;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#iframe_radio {
+    margin-left: 35px;
+    margin-right: auto;
+    margin-top: 20px;
+}

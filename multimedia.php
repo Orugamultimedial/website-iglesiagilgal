@@ -20,6 +20,7 @@ require('./includes/social_buttons.php');
     <div>
         <?php
         require('./includes/lateral_bar.php');
+        require('./includes/radio.php');
         ?>
     </div>
 
