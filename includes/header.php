@@ -1,7 +1,14 @@
 <?php require('./services/conection_db.php');?>
-
-<link rel="stylesheet" href="./css/headers.css">
-
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iglesia Gilgal</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/headers.css">
+        <script src="main.js"></script>
+    </head>
 
 <header style="margin-top:0px;">
     

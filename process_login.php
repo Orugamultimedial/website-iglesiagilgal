@@ -1,20 +1,15 @@
 <?php
 require('./includes/header.php');
 ?>
+
 <link rel="stylesheet" href="./css/login.css">
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <script src="main.js"></script>
-</head>
-<body>
+
 <?php
     if(isset($_POST)){
+
+        
+            //elimina la sesión de error si existe
+            session_unset($_SESSION['error_login']);
             
             $user = trim($_POST['user']);
             $pass = trim($_POST['pass']);
@@ -32,12 +27,12 @@ require('./includes/header.php');
                     $verify = password_verify($pass, $usuario['password']);
 
                     if($verify){
-
+                        $status = 'ok';
                         $_SESSION['user'] = $usuario;
+                        $_SESSION['status'] = $status; 
                         $name = $_SESSION['user']['name'];
                         $surname = $_SESSION['user']['surname'];
                     
-
                         echo "<div id='container_login'>";
                         echo "  <div id='login'>";
                         echo "    <img src='./img/check_ok.png' alt='check ok'><h1>identificado</h1>";
@@ -46,13 +41,6 @@ require('./includes/header.php');
                         echo "  </div>"; 
                         echo "</div>"; 
                         header( "Refresh:2; url=./administration.php?name=$name&surname=$surname", true, 303);
-
-
-                        if(isset($_SESSION['error_login'])){
-                            session_unset($_SESSION['error_login']);
-                        }else{
-                            echo 'No existe la clase Error_login';
-                        }
 
 
                     }else{
@@ -65,15 +53,17 @@ require('./includes/header.php');
                         echo            "<h2 style='color:white'>Hay un error $error_session</h2>";
                         echo  "     </div>"; 
                         echo  "</div>";
+                        header( "Refresh:2; url=./administration.php", true, 303);
                     }
 
             }else{
                 echo  "<div id='container_login'>";
                 echo        "<div id='login'>";
                 echo            "<img src='./img/check_fail.png' alt='check ok'>";
-                echo            "<h2 style='color:white'>Error al consultar la db</h2>";
+                echo            "<h4 style='color:white'>Error, el usuario o la contraseña son incorrectos</h4>";
                 echo  "     </div>"; 
                 echo  "</div>";
+                header( "Refresh:2; url=./administration.php", true, 303);
             }
     }else{
         echo  "<div id='container_login'>";
@@ -82,6 +72,7 @@ require('./includes/header.php');
         echo            "<h2 style='color:white'>error al recibir la variable por POST</h2>";
         echo  "     </div>"; 
         echo  "</div>";
+        header( "Refresh:2; url=./administration.php", true, 303);
     }
 ?>
  

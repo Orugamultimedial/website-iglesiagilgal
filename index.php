@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iglesia Gilgal</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="main.js"></script>
-</head>
-<body>
-
 <?php
 require('./includes/header.php');
 require('./includes/facebook_live.php');
@@ -28,3 +16,17 @@ require('./includes/social_buttons.php');
 
 </body>
 </html>
+
+<!--script>
+    var foo="<?php echo $status ?>";
+    console.log("es:"+foo);
+
+    if(foo == 'ok'){
+        login = document.getElementById('login_icon');
+        logout = document.getElementById('logout_icon');
+        login.style.display = 'none';
+        logout.style.display = 'Block';
+    }else{
+        console.log('Usuario Anónimo');
+    }
+</!--script>
