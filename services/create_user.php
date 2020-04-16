@@ -1,12 +1,18 @@
 <?php
 require('./conection_db.php');
+?>
+<!--Import styles-->
+<link rel="stylesheet" href="../css/login.css">
 
-$user = isset($_POST['user_create']) ? $_POST['user_create']: false;
-$pass = isset($_POST['pass_create']) ? $_POST['pass_create']: false;
-$name = isset($_POST['name_create']) ? $_POST['name_create']: false;
-$surname = isset($_POST['surname_create']) ? $_POST['surname_create']: false;
-$mail = isset($_POST['mail_create']) ? $_POST['mail_create']: false;
+<?php
+$user = isset($_POST['user_create']) ? mysqli_real_escape_string($db, trim($_POST['user_create'])): false;
+$pass = isset($_POST['pass_create']) ? mysqli_real_escape_string($db, trim($_POST['pass_create'])): false;
+$name = isset($_POST['name_create']) ? mysqli_real_escape_string($db, trim($_POST['name_create'])): false;
+$surname = isset($_POST['surname_create']) ? mysqli_real_escape_string($db, trim($_POST['surname_create'])): false;
+$mail = isset($_POST['mail_create']) ? mysqli_real_escape_string($db,trim($_POST['mail_create'])): false;
 
+$_SESSION['newUser'] = $user;
+$_SESSION['newPass'] = $pass;
 
 //array errors
 $errors = array();
@@ -49,30 +55,53 @@ if(!empty($mail) && filter_var($mail, FILTER_VALIDATE_EMAIL)){
 }
 
 
-if(count($errors) == 0){
-    $insertNewUser = "INSERT INTO users VALUES ('DEFAULT','$user','$pass','$name','$surname','$mail','admin')";
 
-    mysqli_query($db,$insertNewUser);
-    
-    $createUserOk = true;
+if(count($errors) == 0){
+
+    //ENCODE PASSWORD
+    $password_encode = password_hash($pass, PASSWORD_BCRYPT, ['cost'=>4]);
+
+    $insertNewUser = "INSERT INTO users VALUES ('DEFAULT','$user','$password_encode','$name','$surname','$mail','admin')";
+
+    $create = mysqli_query($db,$insertNewUser);
+
+    if($create){
+        $_SESSION['createUserOk'] = true;
+        ?>
+        <link rel="stylesheet" href="../css/login.css">
+        
+        <div id='login'>
+            <h1>Usuario Creado</h1>
+            <h4>Recuerda estos datos</h4>
+            <h3 style="color:white">Username: <?php echo $_SESSION['newUser']?></h3>
+            <h3 style="color:white">Password: <?php echo $_SESSION['newPass']?></h3>
+        </div>`
+        <?php
+        header( "Refresh:8; url=../administration.php?user=$user&pass=$pass", true, 303);
+    }else{
+        $_SESSION['createUserOk'] = false;
+        $_SESSION['errors'] ['general'] = 'Error al cargar a la base de datos';
+        header( "Refresh:8; url=../administration.php?user=$user&pass=$pass", true, 303);
+        ?>
+        <div id='login'>
+            <h1>Revisa estos datos</h1>
+            <h3><?php var_dump($_SESSION['errors']);?></h3>
+        </div>
+        <?php
+    }
 
 }else{
     $createUserOk = false;
-}
+    $_SESSION['error'] = $errors;
+    ?>
 
-
-
-
-
-?>
-<link rel="stylesheet" href="../css/login.css">
     <div id='login'>
-        <h1>Usuario Creado</h1>
-        <h4>Recuerda estos datos</h4>
-        <h3 style="color:white">Username: <?php $user ?></h3>
-        <h3 style="color:white">Password: <?php $pass ?></h3>
-    </div>`;
-<?php
-header( "Refresh:5; url=../administration.php?createUserOk=$createUserOk&user=$user&pass=$pass", true, 303);
+        <h1>Revisa estos datos</h1>
+        <h3><?php var_dump($errors);?></h3>
+    </div>
+    <?php
+    header( "Refresh:8; url=../administration.php?user=$user&pass=$pass", true, 303);
+}
+?>
 
 

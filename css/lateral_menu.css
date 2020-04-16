@@ -24,9 +24,10 @@
     border-radius: 100%;
 }
 
-#lateral_menu h3 {
+#lateral_menu h4 {
     text-align: center;
-    color: aliceblue;
+    color: rgb(9, 57, 100);
+    margin-bottom: 10px;
 }
 
 #lateral_menu li {

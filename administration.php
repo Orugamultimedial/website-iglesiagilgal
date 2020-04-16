@@ -1,3 +1,8 @@
+<?php
+$name = $_GET['name'];
+$surname = $_GET['surname'];
+?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -13,7 +18,6 @@
 
 
         <?php
-        $user = $_GET['user'];
         require('./includes/header.php');
         require('./includes/radio_online.php');
         require('./includes/social_buttons.php');
@@ -25,5 +29,13 @@
         </div>
     </body>
 </html>
+
+<script>
+    login = document.getElementById('login_icon');
+    logout = document.getElementById('logout_icon');
+    
+    login.style.display = 'none';
+    logout.style.display = 'Block';
+</script>
 
     

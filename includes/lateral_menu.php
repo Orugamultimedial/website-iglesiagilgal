@@ -1,9 +1,13 @@
+<?php 
+session_start();
+
+?>
 <link rel="stylesheet" href="./css/lateral_menu.css">
 
 <div id="lateral_menu">
     <nav>
         <img src="./img/user_icon.png" alt="user icon">
-        <h3><?php $user ?></h3>
+        <h4><?php echo "$name $surname"?></h4>
         <ul>
             <li>Modificar Inicio</li>
             <li>Modificar Nosotros</li>

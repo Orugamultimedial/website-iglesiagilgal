@@ -28,7 +28,6 @@ require('./includes/social_buttons.php');
     </div>
 </div>
 
-
     
 </body>
 </html>

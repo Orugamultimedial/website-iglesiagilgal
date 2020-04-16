@@ -82,6 +82,18 @@ header ul li a:hover {
     transform: scale(0.8);
 }
 
+#logout_icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+#logout_icon:hover {
+    transform: scale(0.8);
+}
+
 
 /*------------------RESPONSIVE--------------------------*/
 
