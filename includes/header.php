@@ -1,4 +1,7 @@
-<?php require('./services/conection_db.php');?>
+<?php 
+require('./services/conection_db.php');
+
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
