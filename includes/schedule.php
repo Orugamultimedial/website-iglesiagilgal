@@ -1,29 +1,7 @@
 <link rel="stylesheet" href="./css/schedule.css">
 
     <div id='schedule'>
-        <ul class='schedule_days'>
-            <li id="monday" class='actived' onclick="mondayActived()">
-                <h5>Lunes</h5>                
-            </li>
-            <li id="tuesday" class='desactived' onclick="tuesdayActived()">
-                <h5>Martes</h5>                
-            </li>          
-            <li id="wednesday" class='desactived' onclick="wednesdayActived()">
-                <h5>Miércoles</h5>                
-            </li>          
-            <li id="thursday" class='desactived' onclick="thursdayActived()">
-                <h5>Jueves</h5>                
-            </li>          
-            <li id="friday" class='desactived' onclick="fridayActived()">
-                <h5>Viernes</h5>                
-            </li>          
-            <li id="saturday" class='desactived' onclick="saturdayActived()">
-                <h5>Sábado</h5>                
-            </li>          
-            <li id="sunday" class='desactived' onclick="sundayActived()">
-                <h5>Domingo</h5>                
-            </li>
-        </ul>
+
         <div class='activities' id="info_monday">
         <h2>Lunes</h2>    
         <h3>Actividades</h3>
@@ -52,6 +30,29 @@
             <h2>Domingo</h2>
             <h3>Actividades</h3>
         </div>
+        <!--ul-- class='schedule_days'>
+            <li id="monday" class='actived' onclick="mondayActived()">
+                <h5>Lunes</h5>                
+            </li>
+            <li id="tuesday" class='desactived' onclick="tuesdayActived()">
+                <h5>Martes</h5>                
+            </li>          
+            <li id="wednesday" class='desactived' onclick="wednesdayActived()">
+                <h5>Miércoles</h5>                
+            </li>          
+            <li id="thursday" class='desactived' onclick="thursdayActived()">
+                <h5>Jueves</h5>                
+            </li>          
+            <li id="friday" class='desactived' onclick="fridayActived()">
+                <h5>Viernes</h5>                
+            </li>          
+            <li id="saturday" class='desactived' onclick="saturdayActived()">
+                <h5>Sábado</h5>                
+            </li>          
+            <li id="sunday" class='desactived' onclick="sundayActived()">
+                <h5>Domingo</h5>                
+            </li>
+        </!--ul-->
     </div>
 
     <script>

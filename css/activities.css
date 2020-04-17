@@ -1,27 +1,26 @@
-/*articles*/
+/*activities*/
 
 #container_article {
-    width: 65%;
+    width: 95%;
     height: auto;
     box-sizing: content-box;
-    padding: 1%;
-    padding-top: 2%;
-    background-color: #0c4c55;
+    padding: 2%;
+    padding-top: 8%;
+    background-color: #6d4d55;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-    margin-top: -750px;
 }
 
 #article {
-    display: inline-flex;
+    display: block;
     width: 95%;
     height: auto;
     box-sizing: content-box;
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: rgba(101, 136, 145, 0.781);
+    background-color: rgba(168, 158, 150, 0.781);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -29,19 +28,20 @@
 }
 
 #div_article_info {
-    width: 65%;
+    width: 95%;
     margin-right: 10px;
+    box-sizing: content-box;
+    padding-bottom: 2%;
 }
 
-#div_article_img {
-    width: 30%;
-    margin-right: 10px;
+#div_article_header {
+    display: inline-flex;
+    width: 95%;
 }
 
 #article img {
-    width: 300px;
+    width: 200px;
     height: auto;
-    margin-top: 5%;
     padding: 2%;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -57,6 +57,7 @@
 
 #article h5 {
     color: rgba(6, 45, 78, 0.747);
+    float: right;
 }
 
 #article span {
@@ -69,4 +70,8 @@
     float: right;
     text-align: justify;
     color: rgba(222, 238, 252, 0.342);
+}
+
+#div_article_header_info {
+    margin-left: 2%;
 }

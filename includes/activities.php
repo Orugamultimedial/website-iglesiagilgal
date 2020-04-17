@@ -1,9 +1,9 @@
 <?php
 $categories = array();
-$categories = conseguirArticulos($db);
+$categories = conseguirActividades($db);
 
 ?>
-<link rel="stylesheet" href="./css/articles.css">
+<link rel="stylesheet" href="./css/activities.css">
     <div id='container_article'>
         <?php    
 
@@ -28,36 +28,32 @@ $categories = conseguirArticulos($db);
 
                         <ul>
                             <li id='article'>
+                            <div id="div_article_header">
+
+                            <?php
+                                //verify images
+                                if(file_exists($image)){
+                                
+                                    echo "<img src='$image'>";
+
+                                }else{
+                                    //no existe la imagen;
+                                };
+                            ?>   
+                                <div id="div_article_header_info">
+                                    <h1><?php echo $title ?></h1>
+                                    <h2><?php echo $subtitle ?></h2>
+                                    <h5><?php echo $date ?></h5> 
+                                </div> 
+                                
+                            </div>
                             <div id="div_article_info">
-                                <h1><?php echo $title ?></h1>
-                                <h2><?php echo $subtitle ?></h2>
-                                <h5><?php echo $date ?></h5>
+  
                                 <span><?php echo $text ?></span>
                                 <h4><?php echo $tags ?></h4>
                                 <h3><?php echo $author ?></h3>
                             </div>
-                            <div id="div_article_img">
 
-                                <?php
-                                    //verify images
-                                    if(file_exists($image)){
-                                    
-                                        echo "<img src='$image'>";
-
-                                    }else{
-                                        //no existe la imagen;
-                                    };
-
-                                    if(file_exists($image2)){
-                                        
-                                        echo "<img src='$image2'>";
-
-                                    }else{
-                                        //no existe la imagen;
-                                    }
-                                ?>                        
-                                
-                            </div>
                             </li>
                         </ul>
                     

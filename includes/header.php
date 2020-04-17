@@ -33,9 +33,9 @@ require('./services/conection_db.php');
         <li>
             <a href='./youngsters.php'>Jóvenes</a>
         </li>
-        <li>
+        <!--<li>
             <a href='./multimedia.php'>Medios</a>
-        </li>
+        </li>-->
     </ul>
     <a href="./login.php">
         <img id="login_icon" src="./img/login.png" alt="Iglesia Gilgal login">

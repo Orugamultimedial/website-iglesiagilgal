@@ -2,16 +2,17 @@
 
 #schedule {
     display: inline-flex;
-    width: 55%;
-    height: 500px;
-    margin-top: 100px;
+    width: 19%;
+    height: 350px;
+    margin-top: 60px;
     margin-left: auto;
-    margin-right: 25%;
-    background: radial-gradient(ellipse at top right, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(ellipse at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(237, 48, 101, .7), transparent), radial-gradient(circle at 65% 65%, rgba(169, 99, 198, .7), transparent);
+    background-color: rgba(126, 85, 50, 0.856);
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 0.5px solid rgb(99, 55, 18);
     text-transform: uppercase;
-    float: right;
+    position: fixed;
+    left: 35px;
+    top: 30px;
 }
 
 .schedule_days {
@@ -21,14 +22,13 @@
 }
 
 .desactived {
-    width: 60px;
-    height: auto;
+    width: 10px;
+    box-sizing: content-box;
     border-radius: 8px;
-    border: 1px solid rgb(9, 41, 102);
-    background: radial-gradient(circle at top right, rgba(57, 57, 122, 0.9) 25%, transparent 100%), radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(202, 227, 227, .7), transparent), radial-gradient(circle at 65% 65%, rgba(183, 218, 232, .7), transparent);
     text-align: center;
     text-decoration: none;
-    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
     margin-top: 40px;
 }
 
@@ -36,9 +36,9 @@
     width: 100px;
     height: auto;
     border-radius: 8px;
-    border: 1px solid rgb(9, 41, 102);
-    background: radial-gradient(circle at top right, rgba(57, 57, 122, 0.9) 25%, transparent 100%), radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(202, 227, 227, .7), transparent), radial-gradient(circle at 65% 65%, rgba(183, 218, 232, .7), transparent);
-    font-size: 15px;
+    background: radial-gradient(circle at top right, rgba(100, 62, 27, 0.9) 25%, transparent 100%), radial-gradient(circle at bottom left, rgba(68, 28, 21, 0.9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(202, 227, 227, .7), transparent), radial-gradient(circle at 65% 65%, rgba(183, 218, 232, .7), transparent);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
     margin-right: 10px;
@@ -56,9 +56,9 @@
     width: 100px;
     height: auto;
     border-radius: 8px;
-    border: 1px solid rgb(9, 41, 102);
-    background: radial-gradient(circle at top right, rgba(57, 57, 122, 0.9) 25%, transparent 100%), radial-gradient(circle at bottom left, rgba(20, 20, 34, .9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(202, 227, 227, .7), transparent), radial-gradient(circle at 65% 65%, rgba(183, 218, 232, .7), transparent);
-    font-size: 15px;
+    background: radial-gradient(circle at top right, rgba(100, 62, 27, 0.9) 25%, transparent 100%), radial-gradient(circle at bottom left, rgba(68, 28, 21, 0.9) 25%, transparent 100%), radial-gradient(circle at 35% 40%, rgba(202, 227, 227, .7), transparent), radial-gradient(circle at 65% 65%, rgba(183, 218, 232, .7), transparent);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
     margin-right: 10px;
@@ -66,12 +66,15 @@
 }
 
 .activities {
-    width: 75%;
-    height: 425px;
+    width: 17%;
+    height: 320px;
     background-color: #ccc;
     border: 1px solid rgb(61, 10, 42);
     border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 20px;
+    position: fixed;
+    left: 50px;
+    right: 150px;
 }
 
 h3,
