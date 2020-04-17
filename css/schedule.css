@@ -2,8 +2,8 @@
 
 #schedule {
     display: inline-flex;
-    width: 19%;
-    height: 350px;
+    width: 22%;
+    height: 455px;
     margin-top: 60px;
     margin-left: auto;
     background-color: rgba(126, 85, 50, 0.856);
@@ -11,7 +11,7 @@
     border: 0.5px solid rgb(99, 55, 18);
     text-transform: uppercase;
     position: fixed;
-    left: 35px;
+    left: 15px;
     top: 30px;
 }
 
@@ -66,15 +66,15 @@
 }
 
 .activities {
-    width: 17%;
-    height: 320px;
+    width: 20%;
+    box-sizing: content-box;
     background-color: #ccc;
     border: 1px solid rgb(61, 10, 42);
     border-radius: 8px;
     margin-top: 20px;
     position: fixed;
-    left: 50px;
-    right: 150px;
+    left: 28px;
+    right: 145px;
 }
 
 h3,
@@ -86,26 +86,8 @@ h2 {
     display: block;
 }
 
-#info_tuesday {
-    display: none;
-}
-
-#info_wednesday {
-    display: none;
-}
-
-#info_thursday {
-    display: none;
-}
-
-#info_friday {
-    display: none;
-}
-
-#info_saturday {
-    display: none;
-}
-
-#info_sunday {
-    display: none;
+#info_monday p {
+    padding: 2%;
+    font-size: 11px;
+    line-height: 20px;
 }
