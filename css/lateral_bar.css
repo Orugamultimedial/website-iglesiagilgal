@@ -1,16 +1,17 @@
 #lateral_bar {
     width: 12%;
-    height: 800px;
+    box-sizing: content-box;
     border-radius: 8px;
     margin-left: 25px;
     border: 2px solid rgb(4, 73, 78);
     background-color: rgba(156, 195, 233, 0.103);
+    padding-top: 1%;
     opacity: 1;
 }
 
 .news {
     width: 92%;
-    height: 150px;
+    box-sizing: content-box;
     background-color: rgb(22, 35, 54);
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -46,4 +47,23 @@
 
 .news_link {
     text-decoration: none;
+}
+
+
+/*------------------RESPONSIVE--------------------------*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #lateral_bar {
+        width: 20%;
+        margin-left: 1px;
+        padding-top: 20px;
+    }
+    .news {
+        margin-bottom: 10px;
+    }
+    .news_title {
+        text-align: center;
+        margin-bottom: 0px;
+        font-size: 9px;
+    }
 }
