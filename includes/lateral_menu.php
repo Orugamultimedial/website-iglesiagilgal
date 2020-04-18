@@ -18,7 +18,7 @@ session_start();
             <li onclick='createUser()'>Crear Usuario</li>
             <br>
             <li style='background-color:#1A7A67'>Anuncio</li>
-            <li style='background-color:#BD081C'>Facebook Live</li>
+            <li style='background-color:#BD081C' onclick="showFacebookUrl()">Facebook Live</li>
         </ul>
     </nav>
 </div>

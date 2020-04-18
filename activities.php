@@ -4,6 +4,7 @@ require('./helpers.php');
 require('./includes/facebook_live.php');
 require('./includes/social_buttons.php');
 require('./includes/radio_online.php');
+require('./includes/contact.php');
 
 
 ?>

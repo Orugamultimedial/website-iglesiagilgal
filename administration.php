@@ -12,9 +12,12 @@ $surname = $_GET['surname'];
         require('./includes/social_buttons.php');
         require('./includes/lateral_menu.php');
         require('./includes/create_user.php');
+        require('./includes/contact.php');
+        require('./includes/facebook_live_url.php');
         ?>
-        <div id='container_administration_info'>
-        </div>
+
+        <div id='container_administration_info'></div>
+
     </body>
 </html>
 
@@ -24,6 +27,23 @@ $surname = $_GET['surname'];
     
     login.style.display = 'none';
     logout.style.display = 'Block';
+
+    
+    function showFacebookUrl(){
+        facebookUrl = document.getElementById('container_facebok_live_url');
+
+        switch (facebookUrl.style.display) {
+            case 'none':
+                facebookUrl.style.display = 'block';  
+                break;
+            case 'block':
+                facebookUrl.style.display = 'none';
+        
+            default:
+            facebookUrl.style.display = 'none';
+                break;
+        };   
+    };
 </script>
 
     

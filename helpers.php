@@ -1,6 +1,6 @@
 <?php
 function conseguirArticulos($conection_db){
-    $sql = "SELECT * FROM articles WHERE category ='jovenes'";
+    $sql = "SELECT * FROM articles WHERE category ='jovenes' ORDER BY date ASC;";
     $categoryArticles = mysqli_query($conection_db, $sql);
 
     $result = array();
@@ -12,7 +12,7 @@ function conseguirArticulos($conection_db){
 }
 
 function conseguirActividades($conection_db){
-    $sql = "SELECT * FROM articles WHERE category ='actividades'";
+    $sql = "SELECT * FROM articles WHERE category ='actividades' ORDER BY date ASC;";
     $categoryActivities = mysqli_query($conection_db, $sql);
 
     $result = array();
@@ -24,7 +24,7 @@ function conseguirActividades($conection_db){
 }
 
 function conseguirAgenda($conection_db){
-    $sql = "SELECT * FROM schedule WHERE tags = 'info'";
+    $sql = "SELECT * FROM schedule WHERE tags = 'info' ";
     $day = mysqli_query($conection_db, $sql);  
     
     $result = array();
@@ -33,5 +33,29 @@ function conseguirAgenda($conection_db){
         $result = $day;
     };
     return $result; 
+}
+
+function conseguirNoticias($conection_db){
+    $sql = "SELECT * FROM articles ORDER BY date ASC;";
+    $categoryArticles = mysqli_query($conection_db, $sql);
+
+    $result = array();
+
+    if($categoryArticles && mysqli_num_rows($categoryArticles) >= 1){
+        $result = $categoryArticles;
+    };
+    return $result;
+}
+
+function conseguirUrl($conection_db){
+    $sql = "SELECT * FROM streaming ";
+    $url = mysqli_query($conection_db, $sql);
+
+    $result = array();
+
+    if($url && mysqli_num_rows($url) >= 1){
+        $result = $url;
+    };
+    return $result;
 }
 ?>
