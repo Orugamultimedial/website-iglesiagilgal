@@ -1,3 +1,5 @@
+/*radio_online*/
+
 #link_radio_online {
     margin-left: 87%;
     width: 3%;
@@ -8,4 +10,21 @@
 #radio_online {
     width: 125px;
     height: auto;
+}
+
+
+/*------------------RESPONSIVE--------------------------*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /*radio_online*/
+    #link_radio_online {
+        margin-left: 82%;
+        width: 3%;
+        margin-top: 11%;
+        position: fixed;
+    }
+    #radio_online {
+        width: 55px;
+        height: auto;
+    }
 }

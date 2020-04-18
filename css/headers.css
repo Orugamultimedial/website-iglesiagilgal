@@ -25,6 +25,11 @@ header {
     font-size: 20px;
 }
 
+#title-bar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 header ul {
     display: block;
     width: auto;
@@ -111,19 +116,52 @@ header ul li a:hover {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /*HEADER*/
+    header {
+        height: 40px;
+    }
     #title-bar {
-        margin-left: 0.5%;
-        font-size: 15px;
+        padding-top: 2%;
+        font-size: 10px;
+        margin-top: 6px;
     }
     header ul {
-        margin-right: 5%;
+        display: block;
+        width: auto;
+        height: inherit;
+        margin: auto;
+        margin-right: 2%;
     }
-    #nav-create-project {
-        display: none;
+    header ul li {
+        display: inline-block;
+        margin: 0px auto;
+        text-align: center;
+        line-height: 30px;
     }
     header ul li a {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 2px;
+        padding-left: 2px;
         font-size: 10px;
+    }
+    #imagen_logo {
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    #index_btn {
+        display: none;
+    }
+    #login_icon {
+        width: 20px;
+        height: 20px;
+        margin-top: 4px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #logout_icon {
+        display: none;
+        width: 20px;
+        height: 20px;
+        margin-top: 4px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
 }

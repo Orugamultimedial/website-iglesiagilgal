@@ -18,10 +18,12 @@ require('./services/conection_db.php');
     <img src="./img/logo_iglesia_gilgal.png" id="imagen_logo" alt="logo Iglesia Gilgal">
     
     
-    <h1 id="title-bar">Iglesia Gilgal</h1>
+    
+        <h1 id="title-bar"><a href='./index.php'>Iglesia Gilgal</a></h1>
+    
     
     <ul>
-        <li>
+        <li id="index_btn">
             <a href='./index.php'>Inicio</a>
         </li>
         <li>

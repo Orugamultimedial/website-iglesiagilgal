@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./css/info_index.css">
 <div id="container-index">
-    <div class="info_text">
+    <div class="container_index_info info_text">
         <span>
             Nuestro Propósito es predicar el evangelio de Jesucristo hasta lo último de la Tierra, para que todo hombre
             y mujer crea que Él es el hijo de Dios, que murió por nuestros pecados y resucitó para que seamos salvos.
@@ -9,7 +9,7 @@
     <video  controls autoplay style="z-index:80">
         <source src="./img/iglesiagilgal-grey.mp4" type="video/mp4" style="z-index:81">
     </video>
-    <div id="container_index_info">
+    <div class="container_index_info">
         <div class="info_text">
             <h2>En qué creemos</h2>
             <span>
