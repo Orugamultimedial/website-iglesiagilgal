@@ -9,14 +9,14 @@ require('./includes/contact.php');
 
 ?>
 </div>
-<div style="width:80%;display:inline-flex;margin-left:auto;margin-right">
+<div id="container_shows">
 
-    <div style="width:30%">
+    <div id="show_schedule">
         <?php
         require('./includes/schedule.php');
         ?>
     </div>
-    <div style="width:70%">
+    <div id="show_activities">
         <?php
         require('./includes/activities.php');
         ?>
