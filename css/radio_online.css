@@ -20,11 +20,11 @@
     #link_radio_online {
         margin-left: 82%;
         width: 3%;
-        margin-top: 11%;
+        margin-top: 110%;
         position: fixed;
     }
     #radio_online {
-        width: 55px;
+        width: 60px;
         height: auto;
     }
 }

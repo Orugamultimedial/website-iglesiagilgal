@@ -1,4 +1,5 @@
 #facebook_live {
+    display: none;
     width: 8%;
     height: 100px;
     margin-left: 85%;
@@ -14,4 +15,17 @@
 #facebook_live_img {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #facebook_live {
+        width: 20%;
+        box-sizing: content-box;
+        margin-left: 80%;
+        position: fixed;
+        margin-top: 100%;
+    }
+    #facebook_live h5 {
+        display: none;
+    }
 }
