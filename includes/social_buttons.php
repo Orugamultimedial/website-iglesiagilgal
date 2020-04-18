@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./css/social_buttons.css">
 <div class="social">
     <a href='//api.whatsapp.com/send?phone=543755688128'>
         <img id="whatsapp-logo" src="./img/whatsapp-icon.png" alt="Iglesia Gilgal">
