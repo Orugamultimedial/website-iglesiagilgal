@@ -2,7 +2,7 @@
             
             #container-index {
                 width: 60%;
-                margin-top: -825px;
+                padding-top: 5%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -10,7 +10,7 @@
             .container_index_info {
                 width: 100%;
                 height: auto;
-                margin-top: o;
+                margin-top: 0px;
                 margin-left: auto;
                 margin-right: auto;
                 border: 1px solid #ccc;
@@ -48,8 +48,9 @@
             @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
                 #container-index {
                     width: 65%;
-                    margin-top: -122%;
-                    margin-left: 21%;
+                    margin-top: 0px;
+                    padding-top: 13%;
+                    margin-left: 22%;
                 }
                 .info_text {
                     padding: 1%;

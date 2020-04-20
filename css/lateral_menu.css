@@ -43,3 +43,13 @@
 #lateral_menu li:hover {
     transform: scale(0.9);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #lateral_menu {
+        width: 30%;
+        margin-top: 12%;
+    }
+    #lateral_menu li {
+        font-size: 13px;
+    }
+}

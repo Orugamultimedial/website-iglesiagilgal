@@ -7,11 +7,11 @@ session_start();
 <div id="lateral_menu">
     <nav>
         <img src="./img/user_icon.png" alt="user icon">
-        <h4><?php echo "$name $surname"?></h4>
+        <h4>Bienvenido</h4>
         <ul>
             <li>Modificar Inicio</li>
             <li>Modificar Nosotros</li>
-            <li>Modificar Actividades</li>
+            <li onclick='modifyActivities()'>Modificar Actividades</li>
             <li>Modificar Jóvenes</li>
             <li>Modificar Medios</li>
             <li>Modificar Usuario</li>
@@ -22,17 +22,3 @@ session_start();
         </ul>
     </nav>
 </div>
-
-<script>
-    function createUser(){
-        element = document.getElementById('create_user');
-        
-        if(element.style.display == 'none'){
-            element.style.display = 'block';
-        }else{
-            element.style.display = 'none';
-        };
-        
-    };
-    
-</script>

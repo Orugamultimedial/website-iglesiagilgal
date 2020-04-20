@@ -1,13 +1,10 @@
-<?php
-$name = $_GET['name'];
-$surname = $_GET['surname'];
-?>
-
 <link rel="stylesheet" href="./css/login.css">
+<link rel="stylesheet" href="./css/administration.css">
 
     <body>
         <?php
         require('./includes/header.php');
+        require('./helpers.php');
         require('./includes/radio_online.php');
         require('./includes/social_buttons.php');
         require('./includes/lateral_menu.php');
@@ -16,7 +13,11 @@ $surname = $_GET['surname'];
         require('./includes/facebook_live_url.php');
         ?>
 
-        <div id='container_administration_info'></div>
+        <div id='container_administration_info'>
+        <?php
+        require('./includes/modify_activities.php');
+        ?>
+        </div>
 
     </body>
 </html>
@@ -28,22 +29,6 @@ $surname = $_GET['surname'];
     login.style.display = 'none';
     logout.style.display = 'Block';
 
-    
-    function showFacebookUrl(){
-        facebookUrl = document.getElementById('container_facebok_live_url');
-
-        switch (facebookUrl.style.display) {
-            case 'none':
-                facebookUrl.style.display = 'block';  
-                break;
-            case 'block':
-                facebookUrl.style.display = 'none';
-        
-            default:
-            facebookUrl.style.display = 'none';
-                break;
-        };   
-    };
 </script>
 
     

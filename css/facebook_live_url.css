@@ -47,3 +47,21 @@
     top: -25px;
     left: 24px;
 }
+
+
+/*------------------RESPONSIVE--------------------------*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #container_facebok_live_url {
+        text-align: center;
+        width: 85%;
+        margin-left: 2%;
+        margin-top: 30%;
+    }
+    #container_facebok_live_url h2 {
+        font-size: 15px;
+    }
+    #container_facebok_live_url input[type="text"] {
+        width: 70%;
+    }
+}

@@ -1,5 +1,4 @@
 <?php
-require('./services/conection_db.php');
 $categories = array();
 $categories = conseguirArticulos($db);
 

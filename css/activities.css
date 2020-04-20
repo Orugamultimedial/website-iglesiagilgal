@@ -6,7 +6,7 @@
                 box-sizing: content-box;
                 padding: 2%;
                 padding-top: 8%;
-                background-color: #6d4d55;
+                background-color: #0407061c;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 8px;
@@ -20,7 +20,7 @@
                 padding: 1%;
                 padding-left: 2%;
                 padding-right: 2%;
-                background-color: rgba(168, 158, 150, 0.781);
+                background-color: rgb(223, 223, 223);
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 15px;
@@ -48,11 +48,11 @@
             }
             
             #article h1 {
-                color: rgb(12, 38, 61);
+                color: #00CCCC);
             }
             
             #article h2 {
-                color: rgb(19, 58, 92);
+                color: #666666;
             }
             
             #article h5 {
@@ -62,7 +62,7 @@
             
             #article span {
                 text-align: justify;
-                color: rgba(240, 248, 255, 0.699);
+                color: #666666;
             }
             
             #article h4 {

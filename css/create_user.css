@@ -82,3 +82,11 @@
 #error-input-mail_create_user {
     display: none;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #create_user {
+        margin-top: 35%;
+        width: 50%;
+        margin-left: 21%;
+    }
+}

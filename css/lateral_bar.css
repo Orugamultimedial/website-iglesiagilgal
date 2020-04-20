@@ -5,8 +5,8 @@
     margin-left: 25px;
     border: 2px solid rgb(4, 73, 78);
     background-color: rgba(156, 195, 233, 0.103);
-    padding-top: 1%;
     opacity: 1;
+    position: fixed;
 }
 
 .news {
